@@ -87,8 +87,15 @@
             /* justify-items: center; */
             justify-content: space-between;
         }
-
-                    .image-marquee {
+        .fermer{
+            width: 5%;
+            /* padding: 30px;*/
+            cursor: pointer;
+            margin-left: 90%;
+            margin-top: 10px;
+            
+        }
+            .image-marquee {
               overflow: hidden;
               white-space: nowrap;
             }
@@ -238,19 +245,22 @@
         <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zm10.761.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708z"/>
       </symbol>
     </svg>
-<div class="cover-container-fluid d-flex  h-100 p-3 mx-auto flex-column" style=" width: 100%;">
-  <header class="mb-auto">
-    <div>
+<div class="cover-container-fluid d-flex  h-100 p-3 mx-auto flex-column" id="accueil" style=" width: 100%;">
+  <header class="mb-auto fixed-top">
+    <div >
       <!-- <h3 class="float-md-start mb-0"><strong>Accueil</strong></h3> -->
       <h3 class="float-md-end h1-box mb-0"><strong><span class="text-blue"><img class=" imge img-fluid" width="50" src="ed.jpg" alt=""> ELECTRONIC</span><span class="vert"> DIGITAL</span> <span class="orange">AGENCY</span></strong></h3>
       <nav class="nav nav-masthead justify-content-center float-md-start">
-        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Accueil</a>
-        <a class="nav-link fw-bold py-1 px-0" href="#">Plus...</a>
+        <a class="nav-link fw-bold py-1 px-0  active" onclick="activeLink(this.id);" id="1" aria-current="page" href="#accueil">Accueil</a>
+        <a class="nav-link fw-bold py-1 px-0 " onclick="activeLink(this.id);" id="2" onclick="activeLink();" aria-current="page" href="#about">A propos</a>
+        <a class="nav-link fw-bold py-1 px-0 " onclick="activeLink(this.id);" id="3" aria-current="page" href="#services">Nos services</a>
+        <a class="nav-link fw-bold py-1 px-0 " onclick="activeLink(this.id);" id="4" aria-current="page" href="#partenaires">Nos partenaires</a>
+        <a class="nav-link fw-bold py-1 px-0" onclick="activeLink(this.id);" id="5" href="#msg">laissez-nous un message</a>
       </nav>
     </div>
   </header>
 
-  <main class="px-3">
+  <main class="px-3 mt-12">
     <div class="container">
       <div class="d-sm-flex align-items-center justify-content-between">
           <div>
@@ -262,7 +272,7 @@
             
           </div>
       </div>
-  </div>
+    </div>
   </main>
 
   <footer class="mt-auto text-white-50">
@@ -271,11 +281,12 @@
       <div class="spinner-border text-primary spin" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
-      <a href="#"><img src="bibliotheque/images/tiktok.png" alt="" class="img" width="30" ></a>
+      </div></div>
+      <!-- <a href="#"><img src="bibliotheque/images/tiktok.png" alt="" class="img" width="30" ></a> -->
       <!-- <p> <a href="#" class="text-white">BY EDIGIT Copyright&copy; 2022</a> -->
   </footer>
 </div>
-<section class="p-5 bg-dark">
+<section class="p-5 bg-dark" id="about">
   <h2 class="text-center bold"><strong>A PROPOS</strong></h2>
   <div class="container">
       <div class="d-sm-flex align-items-center justify-content-between">
@@ -290,7 +301,7 @@
       
   </div>
 </section>
-<div class="row bg-secondary featurette">
+<div class="row bg-secondary featurette" id="services">
   <h2 class="text-center bold"><strong>NOS SERVICES</strong></h2>
 
   <div class="col-md-7">
@@ -298,44 +309,42 @@
     <!-- <h2 class="featurette-heading fw-normal lh-1" id="formation">Ecole de Formation Professionnelle <span class="text-muted">It’ll blow your mind.</span></h2> -->
     <p class="lead">
         <div class="row">
-<ul class="nav flex-column col-4" style="text-align: left;">
-        <li class="nav-item mb-2 ms-3">CREATION DE SITES WEB</li>
-        <li class="nav-item mb-2 ms-3">MISE SUR PIED DE RESEAU D'ENTREPRISE</li>
-        <li class="nav-item mb-2 ms-3">Communication web</li>
-        <li class="nav-item mb-2 ms-3">ADMINISTRATION DE SITE WEB</li>
-        <li class="nav-item mb-2 ms-3">MARKETING DIGITAL</li>
-        <li class="nav-item mb-2 ms-3">MAINTENANCE MATERIEL LOGICIEL ET SYSTEMES RESEAUX</li>
-        <li class="nav-item mb-2 ms-3">INFOGRAPHIE 2D & 3D</li>
-        <li class="nav-item mb-2 ms-3">CREATION DE LOGO</li>
-        <li class="nav-item mb-2 ms-3">CREATION DE CARTE DE VISITE</li>
-        <li class="nav-item mb-2 ms-3">CREATION DE CV PROFESSIONEL</li>
-        <li class="nav-item mb-2 ms-3">CREATION DES POST PUBLICITAIRE</li>
-</ul>
+          <ul class="nav flex-column col-6" style="text-align: left;">
+                  <li class="nav-item mb-2 ms-3">CREATION DE SITES WEB</li>
+                  <li class="nav-item mb-2 ms-3">MISE SUR PIED DE RESEAU D'ENTREPRISE</li>
+                  <li class="nav-item mb-2 ms-3">Communication web</li>
+                  <li class="nav-item mb-2 ms-3">ADMINISTRATION DE SITE WEB</li>
+                  <li class="nav-item mb-2 ms-3">MARKETING DIGITAL</li>
+                  <li class="nav-item mb-2 ms-3">MAINTENANCE MATERIEL LOGICIEL ET SYSTEMES RESEAUX</li>
+                  <li class="nav-item mb-2 ms-3">INFOGRAPHIE 2D & 3D</li>
+                  <li class="nav-item mb-2 ms-3">CREATION DE LOGO</li>
+                  <li class="nav-item mb-2 ms-3">CREATION DE CARTE DE VISITE</li>
+                  <li class="nav-item mb-2 ms-3">CREATION DE CV PROFESSIONEL</li>
+                  <li class="nav-item mb-2 ms-3">CREATION DES POST PUBLICITAIRE</li>
+          </ul>
         </div>
     
     </p>
   </div>
   <div class="col-md-5">
-    <img name="slide" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="" width="500" height="900" >
-    <script>
-        var i = 0;
-        var images = ['1.jpg','2.jpg','3.jpg','4.PNG','5.jpg','6.jpg','7.jpg'];
-        var time = 2000;
-        function change()
-        {
-            document.slide.src = images[i];
-            if(i < images.length-1)
-            {
-                i++;
-            }
-            else
-            {
-                i=0;
-            }
-            setTimeout("change()",time);
-        }
-        window.onload = change;
-    </script>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="image-marquee">
+            <div class="image-container" >
+              <img src="1.jpg" alt="Image 1" style="height: 850px;">
+              <img src="2.jpg" alt="Image 2" style="height: 850px;">
+              <img src="3.jpg" alt="Image 3" style="height: 850px;">
+              <img src="4.PNG" alt="Image 4" style="height: 850px;">
+              <img src="5.jpg" alt="Image 5" style="height: 850px;">
+              <img src="6.jpg" alt="Image 1" style="height: 850px;">
+              <img src="7.jpg" alt="Image 1" style="height: 850px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </div>
 </div>
 <section class="p-5 bg-dark">
@@ -364,7 +373,7 @@
       </div>
   </div>
 </section>
-<section class="p-5 bg-secondary">
+<section class="p-5 bg-secondary" id="partenaires">
   <h2 class="text-center bold"><strong>Nos partenaires</strong></h2>
   <div class="container-fluid">
     <div class="row">
@@ -383,7 +392,7 @@
     </div>
   </div>
 </section>
-<div class="container-fluid bg-dark">
+<div class="container-fluid bg-dark" id="msg">
   <h2 class="text-center bold"><strong>LAISSEZ NOUS UN MESSAGE</strong></h2>
   <form
   action="https://formspree.io/f/mayggwjj"
@@ -419,5 +428,6 @@
   </ul>
 </footer>
 </div>
+<script src="index.js"></script>
   </body>
 </html>
