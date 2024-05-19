@@ -1745,6 +1745,13 @@
   .mt-5 {
     margin-top: 3rem !important;
   }
+
+  .mt-10 {
+    margin-top: 6rem !important;
+  }
+  .mt-12 {
+    margin-top: 7.5rem !important;
+  }
   
   .mt-auto {
     margin-top: auto !important;
